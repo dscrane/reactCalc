@@ -1,0 +1,48 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: .25% 0 .25% 0;
+  background: #212121;
+  border-radius: 5px;
+  height: 600px;
+  width: 450px;
+}
+
+.display {
+  width: 98%;
+  flex: 3;
+  background: #C0C0C0;
+  border-radius: 5px;
+}
+
+.numpad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: 2px 2px 2px 0;
+  flex: 9;
+  background: #212121;
+}
+
+.numpad__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #919191;
+  border-radius: 2%;
+  box-shadow: 1px 1px 1.5px #A9A9A9;
+  margin: 2px;
+}
+
+.numpad__button-narrow {
+  width: calc(25% - 4px)
+}
+
+.numpad__button-wide {
+  width: calc(50% - 4px);
+}

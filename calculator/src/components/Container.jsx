@@ -9,7 +9,8 @@ const containerStyle = {
   alignItems: 'center',
   margin: 'auto',
   padding: '.25% 0 .25% 0',
-  background: 'blue',
+  background: '#212121',
+  borderRadius: '5px',
   height: '600px',
   width: '450px',
 }
@@ -17,7 +18,7 @@ const containerStyle = {
 export const Container = () => {
 
   return (
-    <div style={containerStyle}>
+    <div className='container'>
       <Display />
       <NumPad />
     </div>

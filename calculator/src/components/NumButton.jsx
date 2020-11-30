@@ -4,8 +4,10 @@ const numButtonStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  background: 'grey',
-  border: '1px dotted blue'
+  background: '#919191',
+  borderRadius: '2%',
+  boxShadow: '1px 1px 1.5px #A9A9A9',
+  margin: '2px',
 }
 
 export const NumButton = (props) => {
@@ -16,13 +18,13 @@ export const NumButton = (props) => {
   )
   if(props.label === '\uFF23' || props.label === '0' ) {
     return (
-      <div style={{...numButtonStyle, width: 'calc(50% - 2px)'}}>
+      <div className='numpad__button numpad__button-wide'>
         {displayLabel}
       </div>
     )
   } else {
     return (
-       <div style={{...numButtonStyle, width: 'calc(25% - 2px)'}}>
+       <div className='numpad__button numpad__button-narrow'>
          {displayLabel}
        </div>
     )
